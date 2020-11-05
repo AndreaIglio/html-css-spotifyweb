@@ -41,6 +41,14 @@ body {
   justify-content: space-between;
 }
 
+.sidebar li:hover {
+  border-left: 2px solid lightgreen;
+}
+
+.sidebar a:hover {
+  color: white;
+}
+
 /* sidebar_top */
 .sidebar_top {
   padding: 15px 0px;
@@ -54,6 +62,7 @@ body {
 
 .sidebar_top img {
   width: 15%;
+  color: grey;
 }
 
 .sidebar ul {
@@ -73,6 +82,7 @@ body {
   margin: 10px 0;
 }
 
+
 .sidebar_top i {
   font-size: 2.5em;
 }
@@ -80,6 +90,7 @@ body {
 .playlist_text {
   margin: 10px 0;
   padding: 0 10px;
+  color: white;
 }
 
 .crea_playlist {
