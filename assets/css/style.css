@@ -1,5 +1,141 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
+
+
+/* utility class */
+.wrapper {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+
+/* /utility class */
+#site-content {
+  height: calc(100% - 80px);
+}
+
+/* sidebar */
+.sidebar {
+  background-color: black;
+  min-width: 200px;
+  max-width: 200px;
+  color: grey;
+  height: calc(100vh - 80px);
+}
+
+.sidebar > div {
+  height: calc(100%/2);
+}
+
+
+
+/* sidebar_top */
+
+.sidebar_top {
+  padding: 15px 0px;
+
+}
+
+.sidebar_top .logo {
+  width: 70%;
+  margin-bottom: 10px;
+  padding: 0 10px;
+
+}
+
+
+.sidebar_top img {
+  width: 15%;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 5px 10px;
+}
+
+.sidebar_top a {
+  text-decoration: none;
+  color: grey;
+}
+
+.sidebar_top ul {
+  margin: 10px 0;
+}
+
+.sidebar_top i {
+  font-size: 2.5em;
+}
+
+.playlist_text {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.crea_playlist {
+  padding: 0 10px;
+}
+
+.crea_playlist_text {
+  align-self: center;
+  margin-left: 10px;
+}
+
+/* /sidebar_top */
+
+
+/* sidebar_bottom */
+.sidebar_bottom {
+align-items: flex-end;
+}
+/* /sidebar_bottom */
+
+
+
+
+/* /sidebar */
+/* main_content */
+/* subscribe_banner */
+.subscribe_banner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 200px);
+  height: 60px;
+  background-color: #0c0c0ca1;
+}
+
+/* /subscribe_banner */
+.main_content {
+  background-color: #121212;
+  width: calc(100% - 200px);
+  padding: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 60px;
+  color: white;
+}
+
+/* /main_content */
+/* player */
+.player {
+  height: 80px;
+  background-color: #282828;
+  color: white;
+}
+
+/* /player */
