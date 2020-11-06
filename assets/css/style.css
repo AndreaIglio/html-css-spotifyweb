@@ -203,24 +203,68 @@ nav>div {
 
 /* /navbar */
 /* recently_played */
+
+#recently_played > h2,p {
+  margin: 0 10px;
+}
+
 .menu_recently_played {
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: flex-start;
 padding: 30px 0;
 }
 
+.menu_recently_played > div {
+margin: 0 10px;
+}
+
 .card_recently_played {
-  align-items:center;
-  text-align:center;
+align-items:center;
+text-align:center;
+padding: 10px 0;
 }
 
 .card_recently_played > * {
 width: 200px;
 }
 
-
+.card_recently_played p {
+  margin: 0;
+}
 
 /* /recently_played */
+
+
+
+/* create_for_you */
+
+#create_for_you > h2,p {
+  margin: 0 10px;
+}
+
+.menu_create_for_you {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 30px 0;
+}
+
+.card_create_for_you {
+  align-items:center;
+  text-align:center;
+  padding: 10px 0;
+}
+
+.menu_create_for_you > div {
+  margin: 0 10px;
+}
+
+.card_create_for_you > * {
+width: 200px;
+}
+
+/* /create_for_you */
+
+
 /* /main_content */
 /* player */
 .player {
