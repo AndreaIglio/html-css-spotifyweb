@@ -13,7 +13,7 @@ ul {
 }
 
 a {
-  color: grey;
+  color: lightgrey;
 }
 
 /* utility class */
@@ -32,7 +32,6 @@ a {
 }
 
 /* color */
-
 /* /color */
 /* /utility class */
 #site-content {
@@ -86,7 +85,6 @@ a {
 .sidebar_top ul {
   margin: 10px 0;
 }
-
 
 .sidebar_top i {
   font-size: 2.5em;
@@ -146,14 +144,8 @@ a {
 
 /* /sidebar_bottom */
 /* /sidebar */
-
-
 /* main_content */
-
-
 /* subscribe_banner */
-
-
 .subscribe_banner {
   position: fixed;
   top: 0;
@@ -165,7 +157,7 @@ a {
 
 .btn-upgrade {
   background-color: transparent;
-  border:1px solid white;
+  border: 1px solid white;
   border-radius: 30px;
   padding: 10px 30px;
   position: absolute;
@@ -179,10 +171,7 @@ a {
   color: white;
 }
 
-
 /* /subscribe_banner */
-
-
 .main_content {
   background-color: #141922;
   width: calc(100% - 200px);
@@ -193,24 +182,45 @@ a {
   color: white;
 }
 
-
+/* navbar */
 nav {
   padding: 10px 10px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-nav > div {
-margin: 10px 10px;
+nav>div {
+  margin: 10px 10px;
 }
 
 .navbar_menu a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .navbar_menu a:hover {
   color: grey;
 }
+
+/* /navbar */
+/* recently_played */
+.menu_recently_played {
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 30px 0;
+}
+
+.card_recently_played {
+  align-items:center;
+  text-align:center;
+}
+
+.card_recently_played > * {
+width: 200px;
+}
+
+
+
+/* /recently_played */
 /* /main_content */
 /* player */
 .player {
