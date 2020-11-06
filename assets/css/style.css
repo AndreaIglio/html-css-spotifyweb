@@ -145,6 +145,11 @@ a {
 /* /sidebar_bottom */
 /* /sidebar */
 /* main_content */
+
+.main_content p {
+  color: grey;
+}
+
 /* subscribe_banner */
 .subscribe_banner {
   position: fixed;
@@ -242,6 +247,10 @@ width: 200px;
   margin: 0 10px;
 }
 
+#create_for_you > p {
+  padding: 10px 0;
+}
+
 .menu_create_for_you {
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -263,6 +272,44 @@ width: 200px;
 }
 
 /* /create_for_you */
+
+
+/* artisti_popolari */
+
+#artisti_popolari > h2,p {
+  margin: 0 10px;
+}
+
+#artisti_popolari > p {
+  padding: 10px 0;
+}
+.menu_artisti_popolari {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 30px 0;
+}
+
+
+.menu_artisti_popolari > div {
+  margin: 0 10px;
+}
+
+
+.card_artisti_popolari {
+  align-items:center;
+  text-align:center;
+  padding: 10px 0;
+}
+
+.card_artisti_popolari img{
+  border-radius: 50%;
+}
+
+.card_artisti_popolari > * {
+width: 200px;
+}
+
+/* /artisti_popolari */
 
 
 /* /main_content */
