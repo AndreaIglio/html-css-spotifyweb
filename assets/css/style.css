@@ -137,16 +137,39 @@ body {
 
 /* /sidebar_bottom */
 /* /sidebar */
+
+
 /* main_content */
+
+
 /* subscribe_banner */
+
+
 .subscribe_banner {
   position: fixed;
   top: 0;
   right: 0;
   width: calc(100% - 200px);
-  height: 60px;
+  height: 80px;
   background-color: #0c0c0ca1;
 }
+
+.btn-upgrade {
+  background-color: transparent;
+  border:1px solid white;
+  border-radius: 30px;
+  padding: 10px 30px;
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+  margin-right: 30px;
+  font-size: 0.9em;
+}
+
+.btn-upgrade:hover {
+  color: white;
+}
+
 
 /* /subscribe_banner */
 .main_content {
@@ -155,7 +178,7 @@ body {
   padding: 20px;
   overflow-y: auto;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 80px;
   color: white;
 }
 
