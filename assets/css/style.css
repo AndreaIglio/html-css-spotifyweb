@@ -150,6 +150,10 @@ a {
   color: grey;
 }
 
+.main_content h4 {
+  padding: 10px 0;
+}
+
 /* subscribe_banner */
 .subscribe_banner {
   position: fixed;
@@ -203,7 +207,8 @@ nav>div {
 }
 
 .navbar_menu a:hover {
-  color: grey;
+  border-bottom: 2px solid green;
+  color: lightgrey;
 }
 
 /* /navbar */
@@ -318,6 +323,74 @@ width: 200px;
   height: 80px;
   background-color: #282828;
   color: white;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px;
+  align-items:center;
 }
 
+.player span {
+  font-size: 0.8em;
+}
+
+/* player_left */
+
+
+
+
+/* /player_left */
+
+/* player_center */
+
+.player_center {
+  flex-grow: 2;
+}
+
+/* /player_center */
+
+/* player_right */
+.player_right {
+  padding: 10px;
+}
+
+.player_right > * {
+  padding: 0 10px;
+}
+
+
+.slider {
+  align-self: center;
+-webkit-appearance: none;
+width: 120px;
+height: 5px;
+border-radius:20px;
+background: #d3d3d3;
+outline: none;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+}
+
+.slider:hover {
+opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 15px;
+height: 15px;
+border-radius:50%;
+background: #4CAF50;
+cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+width: 25px;
+height: 25px;
+cursor: pointer;
+}
+
+
+/* /player_right */
 /* /player */
