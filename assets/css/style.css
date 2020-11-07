@@ -336,6 +336,10 @@ width: 200px;
   align-items:center;
 }
 
+[class*="player_"] {
+  padding: 5px 0;
+}
+
 .player span {
   font-size: 0.8em;
 }
@@ -343,33 +347,96 @@ width: 200px;
 /* player_left */
 
 
+.player_left {
+width: 250px;
+align-items: center;
+justify-content: space-around;
+}
 
+.player_left img {
+  width: 50px;
+}
 
+.player_artist_track {
+  margin: 0 5px;
+  width: 50%;
+  text-align: left;
+
+}
+
+.player_artist_track h5 {
+  margin: 0;
+}
+
+.player_left_icons {
+  width: 30%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.player_left_icons i {
+  color: grey;
+  padding: 0 5px;
+}
 /* /player_left */
 
 /* player_center */
 
 .player_center {
-  flex-grow: 2;
+  width: 40%;
+  align-items: center;
+
+}
+
+.player_icons {
+  width: 50%;
+  justify-content: center;
   align-items: center;
 }
 
+.player_icons i {
+  padding: 0 10px;
+}
+
+.play_icon {
+  font-size: 2em;
+}
+
+
+.player_track {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.player_track > span {
+  padding: 0 10px;
+}
+
+#playerRange {
+  width: 75%;
+}
 /* /player_center */
 
 /* player_right */
 .player_right {
-  padding: 10px;
+justify-content: space-around;
+width: 250px;
+
 }
 
 .player_right > i {
-  padding: 0 10px;
+  color: lightgrey;
+  padding: 0 5px;
+}
+
+#volumeRange {
+  width: 90px;
 }
 
 
 .slider {
-  align-self: center;
+align-self: center;
 -webkit-appearance: none;
-width: 120px;
 height: 5px;
 border-radius:20px;
 background: #d3d3d3;
