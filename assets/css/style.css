@@ -221,32 +221,73 @@ nav > div {
 /* /navbar */
 /* recently_played */
 
-#recently_played > h2,p {
-  margin: 0 10px;
-}
 
 .menu_recently_played {
 flex-wrap: wrap;
-justify-content: flex-start;
 padding: 30px 0;
 }
 
-.menu_recently_played > div {
-margin: 0 10px;
-}
 
-.card_recently_played {
+.card_main_content {
 align-items:center;
 text-align:center;
-padding: 10px 0;
+padding: 10px 5px;
+
 }
 
-.card_recently_played > * {
-width: 200px;
+
+.card_main_content {
+  width: calc(100%/6);
 }
 
-.card_recently_played p {
+.card_main_content > h4 {
+text-align: center;
+}
+
+.card_main_content p {
   margin: 0;
+}
+
+.img_card_main_content {
+  position: relative;
+}
+
+.img_card_main_content > img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline;
+  opacity: 0;
+  background-color: #000000a6;
+}
+
+.overlay i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 4em;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+/*
+.overlay_icon i {
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+} */
+
+.overlay_icon:hover {
+  opacity: 1;
 }
 
 /* /recently_played */
@@ -255,72 +296,20 @@ width: 200px;
 
 /* create_for_you */
 
-#create_for_you > h2,p {
-  margin: 0 10px;
-}
-
-#create_for_you > p {
-  padding: 10px 0;
-}
-
-.menu_create_for_you {
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 30px 0;
-}
-
-.card_create_for_you {
-  align-items:center;
-  text-align:center;
-  padding: 10px 0;
-}
-
-.menu_create_for_you > div {
-  margin: 0 10px;
-}
-
-.card_create_for_you > * {
-width: 200px;
-}
 
 /* /create_for_you */
 
 
 /* artisti_popolari */
 
-#artisti_popolari > h2,p {
-  margin: 0 10px;
-}
-
-#artisti_popolari > p {
-  padding: 10px 0;
-}
-.menu_artisti_popolari {
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 30px 0;
-}
-
-
-.menu_artisti_popolari > div {
-  margin: 0 10px;
-}
-
-
-.card_artisti_popolari {
-  align-items:center;
-  text-align:center;
-  padding: 10px 0;
-}
-
-.card_artisti_popolari img{
+.img_artisti_popolari {
   border-radius: 50%;
 }
 
-.card_artisti_popolari > * {
-width: 200px;
-}
 
+.overlay_artisti_popolari {
+  border-radius: 50%;
+}
 /* /artisti_popolari */
 
 
@@ -338,6 +327,10 @@ width: 200px;
 
 [class*="player_"] {
   padding: 5px 0;
+}
+
+.player_left + .player_right {
+  margin: 2%;
 }
 
 .player span {
