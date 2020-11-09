@@ -44,8 +44,7 @@ a {
 /* sidebar */
 .sidebar {
   background-color: black;
-  min-width: 200px;
-  max-width: 200px;
+  width: 200px;
   color: grey;
   height: calc(100vh - 80px);
   justify-content: space-between;
@@ -61,7 +60,6 @@ a {
 }
 
 
-
 /* sidebar_top */
 .sidebar_top {
   padding: 15px 0px;
@@ -72,6 +70,7 @@ a {
   margin-bottom: 10px;
   padding: 0 10px;
 }
+
 
 .sidebar_top i{
   font-size: 25px;
@@ -93,7 +92,7 @@ a {
 
 
 .nome_playlist {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .playlist_text {
@@ -104,6 +103,11 @@ a {
 
 .crea_playlist {
   padding: 0 10px;
+}
+
+.crea_playlist:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .crea_playlist_icon {
@@ -127,7 +131,7 @@ a {
   margin-right: 5px;
 }
 
-.sidebar_bottom>div {
+.sidebar_bottom > div {
   padding: 5px 0;
 }
 
@@ -150,6 +154,63 @@ a {
 }
 
 /* /sidebar_bottom */
+
+
+/* sidebar_mobile */
+
+.sidebar_mobile {
+  background-color: black;
+  width: 50px;
+  color: grey;
+  height: calc(100vh - 80px);
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.sidebar_mobile a {
+  color: grey;
+}
+
+.sidebar_mobile a:hover {
+  color: white;
+}
+
+.sidebar_mobile_top {
+  height: 50%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sidebar_mobile_top > * {
+  padding: 10px 0;
+}
+
+.sidebar_mobile img {
+  height: 30px;
+}
+
+.sidebar_mobile i {
+  font-size: 25px;
+}
+
+.sidebar_mobile_bottom {
+  height: 50%;
+  justify-content: flex-end;
+}
+.sidebar_mobile_bottom > * {
+  padding: 10px 0;
+}
+
+
+.logo_mobile {
+  height: 10%;
+}
+
+/* /sidebar_mobile */
+
+
 /* /sidebar */
 /* main_content */
 
@@ -169,6 +230,7 @@ a {
   width: calc(100% - 200px);
   height: 80px;
   background-color: #0c0c0ca1;
+  z-index: 1;
 }
 
 .btn-upgrade {
@@ -277,6 +339,7 @@ text-align: center;
 
 .overlay:hover {
   opacity: 1;
+  transition: 0.4s;
 }
 /*
 .overlay_icon i {
@@ -378,7 +441,6 @@ justify-content: space-around;
 .player_center {
   width: 40%;
   align-items: center;
-
 }
 
 .player_icons {
@@ -423,7 +485,7 @@ width: 250px;
 }
 
 #volumeRange {
-  width: 90px;
+  width: 50%;
 }
 
 
