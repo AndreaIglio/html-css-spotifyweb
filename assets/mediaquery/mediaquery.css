@@ -1,3 +1,9 @@
+@media all and (max-height:540px) {
+  .nome_playlist {
+    overflow-y: scroll;
+  }
+}
+
 @media all and (max-width:420px) {
   .card_main_content {
     width: calc(100%/2);
