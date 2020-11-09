@@ -278,12 +278,29 @@ nav > div {
   margin: 10px 10px;
 }
 
+.navbar_menu {
+  position: relative;
+  padding: 5px 0;
+}
+
+.navbar_menu a:hover >.navbar_border_bottom{
+    border-bottom: 2px solid lightgreen;
+}
+
+.navbar_border_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+}
+
 .navbar_menu a {
   text-decoration: none;
 }
 
 .navbar_menu a:hover {
-  border-bottom: 2px solid lightgreen;
+
   color: lightgrey;
 }
 
