@@ -114,10 +114,17 @@ a {
   background: grey;
   padding: 8px;
 }
+.crea_playlist_icon:hover {
+  background: white;
+}
 
 .crea_playlist_text {
   align-self: center;
   margin-left: 5px;
+}
+
+.crea_playlist_text:hover {
+  color:white;
 }
 
 /* /sidebar_top */
