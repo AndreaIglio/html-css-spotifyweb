@@ -90,11 +90,6 @@ a {
   margin: 10px 0;
 }
 
-
-.nome_playlist {
-  overflow-y: ;
-}
-
 .playlist_text {
   margin: 10px 0;
   padding: 0 10px;
@@ -125,6 +120,10 @@ a {
 
 .crea_playlist_text:hover {
   color:white;
+}
+
+.installa_app a:hover {
+  color: white;
 }
 
 /* /sidebar_top */
