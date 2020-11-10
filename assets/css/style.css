@@ -121,11 +121,6 @@ a {
 .crea_playlist_text:hover {
   color:white;
 }
-
-.installa_app a:hover {
-  color: white;
-}
-
 /* /sidebar_top */
 /* sidebar_bottom */
 .sidebar_bottom {
@@ -139,6 +134,10 @@ a {
 
 .sidebar_bottom > div {
   padding: 5px 0;
+}
+
+.installa_app a:hover {
+  color: white;
 }
 
 .installa_app {
